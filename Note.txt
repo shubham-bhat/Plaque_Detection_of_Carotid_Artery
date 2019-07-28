@@ -1,0 +1,16 @@
+I have already developed code for localization of carotid artery with a circular disc. I am attaching the code and images for the same. You can work to understand it first and then refine it. The next step of work that you can work on is as follows
+The contour is a circle of radius r and centre (xc, yc). Points on contour can be defined as x = xc + r cos(th) and y = yc + r sin(th), th varying from o to 2 Pi.
+the line joining the centre (xc, yc) and (x, y) is a radial line to circle. Move along the radial line for r = rmin to rmax and find the point of max intensity change. Use a line edge detector like [-1, -1, -1, -1, -1, 1, 1, 1, 1, 1] so that affect of noise is eliminated
+Plot the new contour points (x, y) for th = 0 to 2 Pi on the image
+I will tell  you the next steps of smoothing and further optimization. Please call me if you have any doubt. 
+
+I am including Prof Anitha who can further help you on it.
+
+
+
+Note 2:
+Please find a simplified code that does not require the second file. Please use this for further development of algorithm.
+Please note the following 
+You can turn off or on display of intermediate image by setting global variable DISPLAY
+You can control closing of window by pressing any key or button, by changing global variable BLOCK
+The rho and sigma value (radius of template) can be adjusted 
